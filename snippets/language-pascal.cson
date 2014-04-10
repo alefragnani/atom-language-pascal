@@ -1,0 +1,25 @@
+'.source.pascal':
+  'begin … end':
+    'prefix': 'begin'
+    'body': 'begin\n\t$0\nend;'
+  'class … end':
+    'prefix': 'class'
+    'body': 'T${1:ClassName} = class\n\t$0\nend;'
+  'constructor, destructor':
+    'prefix': 'constructor'
+    'body': 'constructor Create${1:()};\ndestructor Destroy; override;$0'
+  'for … end':
+    'prefix': 'for'
+    'body': 'for ${1:i} := ${2:0} to ${3:max} do begin\n\t$0\nend;'
+  'if … end':
+    'prefix': 'if'
+    'body': 'if ${1} then begin\n\t$0\nend;'
+  'property':
+    'prefix': 'prop'
+    'body': 'property ${1:PropertyName}: ${2:WideString} read ${3:F}${1} write ${4:F}${1};$0'
+  'try … finally':
+    'prefix': 'try'
+    'body': 'try\n\t$0\nfinally\n\t$1\nend;'
+  'unit … implementation … end':
+    'prefix': 'unit'
+    'body': 'unit ${1:unit_name};\n\ninterface\n\nuses\n\tSysUtils${2:, Classes};\n\nimplementation\n\n$0\n\nend.'
