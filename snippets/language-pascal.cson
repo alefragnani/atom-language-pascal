@@ -5,8 +5,8 @@
   'class … end':
     'prefix': 'class'
     'body': 'T${1:ClassName} = class\n\t$0\nend;'
-  'constructor, destructor':
-    'prefix': 'constructor'
+  'constructor … destructor':
+    'prefix': 'constr'
     'body': 'constructor Create${1:()};\ndestructor Destroy; override;$0'
   'for … end':
     'prefix': 'for'
