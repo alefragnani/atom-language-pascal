@@ -5,6 +5,7 @@
   'dpr'
   'dti'
   'pkg'
+  'dfm'
 ]
 'name': 'Pascal'
 'patterns': [
