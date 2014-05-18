@@ -1,6 +1,10 @@
 'fileTypes': [
   'pas'
   'p'
+  'dpk'
+  'dpr'
+  'dti'
+  'pkg'
 ]
 'name': 'Pascal'
 'patterns': [
