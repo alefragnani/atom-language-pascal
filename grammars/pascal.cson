@@ -91,7 +91,7 @@
       '0':
         'name': 'punctuation.definition.string.begin.pascal'
     'comment': 'Double quoted strings are an extension and (generally) support C-style escape sequences.'
-    'end': '"'
+    'end': '("|\\n)'
     'endCaptures':
       '0':
         'name': 'punctuation.definition.string.end.pascal'
@@ -109,7 +109,7 @@
     'beginCaptures':
       '0':
         'name': 'punctuation.definition.string.begin.pascal'
-    'end': '\''
+    'end': '(\'|\\n)'
     'endCaptures':
       '0':
         'name': 'punctuation.definition.string.end.pascal'
