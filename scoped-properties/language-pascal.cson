@@ -1,4 +1,0 @@
-'.source.pascal':
-  'editor':
-    'commentStart': '// '
-    'increaseIndentPattern': '\\b(?i:(begin|declare|else|except|exception|finally|for|if|loop|package|procedure|task|try|type|when))\\b'
