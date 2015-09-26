@@ -7,16 +7,57 @@
     'body': 'case ${1:true} of\n\t$0\nend;'
   'class (no parts)':
     'prefix': 'classd'
-    'body': 'T${1:ClassName} = class(T${2:ancestor})\n\t$0\nend;'
+    'body': """
+      T${1:ClassName} = class(T${2:ancestor})
+      \t$0
+      end;
+    """
   'class (with Create/Destroy)':
     'prefix': 'classc'
-    'body': 'T${1:ClassName} = class(T${2:ancestor})\nprivate\n\t$0\nprotected\n\t\npublic\n\tconstructor Create; override;\n\tdestructor Destroy; override;\npublished\n\t\nend;'
+    'body': """
+      T${1:ClassName} = class(T${2:ancestor})
+      private
+      \t$0
+      protected
+      \t
+      public
+      \tconstructor Create; override;
+      \tdestructor Destroy; override;
+      published
+      \t
+      end;
+    """
   'class full (commented)':
     'prefix': 'classfc'
-    'body': 'T${1:ClassName} = class(T${2:ancestor})\nprivate\n\t{ private declarations }\n\t$0\nprotected\n\t{ protected declarations }\n\t\npublic\n\t{ public declarations }\n\t\npublished\n\t{ published declarations }\n\t\nend;'
+    'body': """
+      T${1:ClassName} = class(T${2:ancestor})
+      private
+      \t{ private declarations }
+      \t$0
+      protected
+      \t{ protected declarations }
+      \t
+      public
+      \t{ public declarations }
+      \t
+      published
+      \t{ published declarations }
+      \t\nend;
+    """
   'class full (uncommented)':
     'prefix': 'classfu'
-    'body': 'T${1:ClassName} = class(T${2:ancestor})\nprivate\n\t$0\nprotected\n\t\npublic\n\t\npublished\n\t\nend;'
+    'body': """
+      T${1:ClassName} = class(T${2:ancestor})
+      private
+      \t$0
+      protected
+      \t
+      public
+      \t
+      published
+      \t
+      end;
+    """
   'constructor descendant':
     'prefix': 'CreateC'
     'body': 'constructor Create(AOwner: TComponent); override;'
@@ -25,52 +66,116 @@
     'body': 'constructor Create(${1:params}); ${2:override;}'
   'constructor … destructor':
     'prefix': 'constructord'
-    'body': 'constructor Create(${1:params});\ndestructor Destroy; override;$0'
+    'body': """
+      constructor Create(${1:params});
+      destructor Destroy; override;$0
+    """
   'destructor':
     'prefix': 'destructor'
     'body': 'destructor Destroy; override;$0'
   'else … end':
     'prefix': 'else'
-    'body': 'else\nbegin\n\t$0\nend;'
+    'body': """
+      else
+      begin
+      \t$0
+      end;
+    """
   'enum':
     'prefix': 'enum'
     'body': 'T${1:EnumName} = (${2:meOne}, $0);'
   'for … begin end':
     'prefix': 'forb'
-    'body': 'for ${1:i} := ${2:0} to ${3:max} do\nbegin\n\t$0\nend;'
+    'body': """
+      for ${1:i} := ${2:0} to ${3:max} do
+      begin
+      \t$0
+      end;
+    """
   'for in … end':
     'prefix': 'forin'
-    'body': 'for ${1:MyElem} in ${2:MyList} do\nbegin\n\t$0\nend;'
+    'body': """
+      for ${1:MyElem} in ${2:MyList} do
+      begin
+      \t$0
+      end;
+    """
   'for downto … end':
     'prefix': 'forr'
-    'body': 'for ${1:i} := ${2:max} downto ${3:0} do\nbegin\n\t$0\nend;'
+    'body': """
+      for ${1:i} := ${2:max} downto ${3:0} do
+      begin
+      \t$0
+      end;
+    """
   'for … (no begin end)':
     'prefix': 'for'
-    'body': 'for ${1:i} := ${2:0} to ${3:max} do\n\t$0'
+    'body': """
+      for ${1:i} := ${2:0} to ${3:max} do
+      \t$0
+    """
   'function … end':
     'prefix': 'function'
-    'body': 'function ${1:MyFunction}(${2:params}:${3:integer};\nbegin\n\t$0\nend;'
+    'body': """
+      function ${1:MyFunction}(${2:params}:${3:integer};
+      begin
+      \t$0
+      end;
+    """
   'if … (no begin end)':
     'prefix': 'if'
-    'body': 'if ${1:True} then\n\t$0'
+    'body': """
+      if ${1:True} then
+      \t$0
+    """
   'if … end':
     'prefix': 'ifb'
-    'body': 'if ${1:True} then\nbegin\n\t$0\nend;'
+    'body': """
+      if ${1:True} then
+      begin
+      \t$0
+      end;
+    """
   'if … else (no begin end)':
     'prefix': 'ife'
-    'body': 'if ${1:True} then\n\t${2:then code here}\nelse\n\t${3:else code here}\n'
+    'body': """
+      if ${1:True} then
+      \t${2:then code here}
+      else
+      \t${3:else code here}
+    """
   'if … else end':
     'prefix': 'ifeb'
-    'body': 'if ${1:True} then\nbegin\n\t${2:then code here}\nend\nelse\nbegin\n\t${3:else code here}\nend;'
+    'body': """
+      if ${1:True} then
+      begin
+      \t${2:then code here}
+      end
+      else
+      begin
+      \t${3:else code here}
+      end;
+    """
   'if not Assigned … (no begin end)':
     'prefix': 'ifnass'
-    'body': 'if not Assigned(${1:variable}) then\n\t${1:variable} := T${2:ClassName}.Create(${3:params});$0'
+    'body': """
+      if not Assigned(${1:variable}) then
+      \t${1:variable} := T${2:ClassName}.Create(${3:params});$0
+    """
   'if nil … (no begin end)':
     'prefix': 'ifnil'
-    'body': 'if ${1:variable} = nil then\n\t${1:variable} := T${2:ClassName}.Create(${3:params});$0'
+    'body': """
+      if ${1:variable} = nil then
+      \t${1:variable} := T${2:ClassName}.Create(${3:params});$0
+    """
   'procedure':
     'prefix': 'procedure'
-    'body': 'procedure ${1:MyProcedure}(${2:params};\nbegin\n\t$0\nend;'
+    'body': """
+      procedure ${1:MyProcedure}(${2:params};
+      begin
+      \t$0
+      end;
+    """
   'property getter':
     'prefix': 'prop'
     'body': 'property ${1:name}: ${2:type} read ${3:getter} write ${4:setter};$0'
@@ -91,22 +196,61 @@
     'body': 'raise ${1:Exception}.Create(\'${2:Error Message}\');$0'
   'region':
     'prefix': 'region'
-    'body': '{$REGION \'${1:MyRegion}\'}\n\t$0\n{$ENDREGION}'
+    'body': """
+      {$REGION \'${1:MyRegion}\'}
+      \t$0\n{$ENDREGION}'
+    """
   'repeat until':
     'prefix': 'repeat'
-    'body': 'repeat\n\t$0\nuntil (${1:True});'
+    'body': """
+      repeat
+      \t$0
+      until (${1:True});
+    """
   'try object … finally':
     'prefix': 'try'
-    'body': '${1:variable} := ${2:TComponent}.Create(${3:params});\ntry\n\t$0\nfinally\n\t${1:variable}\nend;'
+    'body': """
+      ${1:variable} := ${2:TComponent}.Create(${3:params});
+      try
+      \t$0
+      finally
+      \t${1:variable}
+      end;
+    """
   'try … finally':
     'prefix': 'tryf'
-    'body': 'try\n\t$0\nfinally\n\t$1\nend;'
+    'body': """
+      try
+      \t$0
+      finally
+      \t$1
+      end;
+    """
   'try … except':
     'prefix': 'trye'
-    'body': 'try\n\t$0\nexcept\n\ton ${1:e}: ${2:Exception} do\nend;'
+    'body': """
+      try
+      \t$0
+      except
+      \ton ${1:e}: ${2:Exception} do
+      end;
+    """
   'variable':
     'prefix': 'var'
     'body': '${1:variable}: ${2:type};$0'
   'unit … implementation … end':
     'prefix': 'unit'
-    'body': 'unit ${1:unit_name};\n\ninterface\n\nuses\n\tSysUtils${2:, Classes};\n\nimplementation\n\n$0\n\nend.'
+    'body': """
+      unit ${1:unit_name};
+
+      interface
+
+      uses
+      \tSysUtils${2:, Classes};
+
+      implementation
+
+      $0
+
+      end.
+    """
