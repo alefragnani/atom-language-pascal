@@ -1,3 +1,7 @@
+## 0.9.0
+
+* Snippets updated for Delphi XE
+
 ## 0.8.0
 
 * Allow capture of `function` as a **symbol**
