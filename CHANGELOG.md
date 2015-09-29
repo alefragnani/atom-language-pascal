@@ -1,3 +1,7 @@
+## 0.10.0
+
+* More Snippets
+
 ## 0.9.0
 
 * Snippets updated for Delphi XE

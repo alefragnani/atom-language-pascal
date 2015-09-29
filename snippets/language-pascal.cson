@@ -1,10 +1,33 @@
 '.source.pascal':
+  'array declaration (var)':
+    'prefix': 'arrayd'
+    'body': 'array[0..${1:size}] of $0'
+  'array declaration (const)':
+    'prefix': 'arrayc'
+    'body': 'array[0..${1:size}] of = ($0)'
   'begin … end':
     'prefix': 'begin'
-    'body': 'begin\n\t$0\nend;'
+    'body': """
+      begin
+      \t$0
+      end;
+    """
   'case … end':
     'prefix': 'case'
-    'body': 'case ${1:true} of\n\t$0\nend;'
+    'body': """
+      case ${1:true} of
+      \t$0
+      end;
+    """
+  'case … (with else)':
+    'prefix': 'casee'
+    'body': """
+      case ${1:true} of
+      \t${2:value}: ${3:statement}
+      else
+        $0
+      end;
+    """
   'class (no parts)':
     'prefix': 'classd'
     'body': """
@@ -42,7 +65,8 @@
       \t
       published
       \t{ published declarations }
-      \t\nend;
+      \t
+      end;
     """
   'class full (uncommented)':
     'prefix': 'classfu'
@@ -168,6 +192,14 @@
       if ${1:variable} = nil then
       \t${1:variable} := T${2:ClassName}.Create(${3:params});$0
     """
+  'interface declaration':
+    'prefix': 'interface'
+    'body': """
+      I${1:InterfaceName}: interface(${2:ancestor})
+      \t${3:[GUID]}
+      \t$0
+      end;
+    """
   'procedure':
     'prefix': 'procedure'
     'body': """
@@ -198,7 +230,8 @@
     'prefix': 'region'
     'body': """
       {$REGION \'${1:MyRegion}\'}
-      \t$0\n{$ENDREGION}'
+      \t$0
+      {$ENDREGION}'
     """
   'repeat until':
     'prefix': 'repeat'
@@ -207,6 +240,9 @@
       \t$0
       until (${1:True});
     """
+  'set declaration':
+    'prefix': 'set'
+    'body': 'T${1:SetName = set of $0};'
   'try object … finally':
     'prefix': 'try'
     'body': """
@@ -253,4 +289,28 @@
       $0
 
       end.
+    """
+  'while statement':
+    'prefix': 'whileb'
+    'body': """
+      while ${1:statement} do
+      begin
+      \t$0
+      end;
+    """
+  'while not EOF':
+    'prefix': 'whileneof'
+    'body': """
+      ${1:dataset}.First;
+      while not ${1:dataset}.EOF do
+      begin
+      \t$0
+      \t${1:dataset}.Next;
+      end;
+    """
+  'while (no begin end)':
+    'prefix': 'while'
+    'body': """
+      while ${1:statement} do
+      \t$0;
     """
