@@ -6,6 +6,8 @@
   'dti'
   'pkg'
   'dfm'
+  'lpr'
+  'lfm'
 ]
 'name': 'Pascal'
 'patterns': [
