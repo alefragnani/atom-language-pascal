@@ -10,7 +10,7 @@
 'name': 'Pascal'
 'patterns': [
   {
-    'match': '\\b(?i:(absolute|abstract|all|and|and_then|array|as|asm|attribute|begin|bindable|case|class|const|default|div|do|do|else|end|except|export|exports|external|far|file|finalization|finally|for|forward|generic|goto|if|implementation|implements|import|in|index|inherited|initialization|interface|interrupt|is|label|library|mod|module|name|near|nil|not|object|of|only|operator|or|or_else|otherwise|override|packed|pow|private|program|property|protected|public|published|qualified|read|record|repeat|resident|restricted|segment|set|shl|shr|specialize|stored|then|to|try|type|unit|until|uses|value|var|view|virtual|dynamic|overload|reintroduce|while|with|write|xor))\\b'
+    'match': '\\b(?i:(absolute|abstract|all|and|and_then|array|as|asm|attribute|begin|bindable|case|class|const|default|div|do|do|else|end|except|export|exports|external|far|file|finalization|finally|for|forward|generic|goto|if|implementation|implements|import|in|index|inherited|initialization|interface|interrupt|is|label|library|mod|module|name|near|nil|not|object|of|only|operator|or|or_else|otherwise|override|packed|pow|private|program|property|protected|public|published|qualified|read|record|repeat|resident|resourcestring|restricted|segment|set|shl|shr|specialize|stored|then|threadvar|to|try|type|unit|until|uses|value|var|view|virtual|dynamic|overload|reintroduce|while|with|write|xor))\\b'
     'name': 'keyword.control.pascal'
   }
   {
