@@ -1,3 +1,9 @@
+## 0.11.0
+
+* Better Support for Lazarus (Issue #8)
+* Default Tab Length to 2 (Issue #9)
+* Added some reserved words (Pull Request #7)
+
 ## 0.10.0
 
 * More Snippets
