@@ -1,3 +1,7 @@
+## 0.12.0
+
+* Better Support for Lazarus (Issue #12)
+
 ## 0.11.0
 
 * Better Support for Lazarus (Issue #8)
