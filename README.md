@@ -19,3 +19,7 @@ The plugin is primarily compatible to **Delphi** variant of **Pascal**, but **Fr
 ### Participate
 
 Contributions are greatly appreciated. Please fork this repository and open a pull request to add snippets, make grammar tweaks, etc.
+
+## License
+
+[MIT](LICENSE.md) &copy; Alessandro Fragnani
