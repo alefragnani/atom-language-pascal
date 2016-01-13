@@ -1,3 +1,6 @@
+## 0.17.0 - Donation button
+* Donation button added
+
 ## 0.16.0 - Repository renamed
 * GitHub repository renamed
 
