@@ -1,6 +1,6 @@
 {
   "name": "language-pascal",
-  "version": "0.15.0",
+  "version": "0.16.0",
   "description": "Pascal language support in Atom",
   "repository": "https://github.com/alefragnani/atom-language-pascal",
   "license": "MIT",
