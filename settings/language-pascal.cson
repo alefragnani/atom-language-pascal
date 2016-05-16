@@ -2,4 +2,5 @@
   'editor':
     'tabLength': 2
     'commentStart': '// '
-    'increaseIndentPattern': '\\b(?i:(begin|declare|else|except|exception|finally|for|if|loop|package|procedure|task|try|type|when))\\b'
+    'increaseIndentPattern': '\\b(?i:(begin|class\const|declare|else|except|exception|finally|for|if|loop|object|package|private\\s*$|procedure|public\\s*$|task|try|type|uses|var|when))\\b'
+    'decreaseIndentPattern': '^\\s*(?i:end(;)?)\\s*$'
