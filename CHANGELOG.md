@@ -1,3 +1,6 @@
+## 0.18.0 - Indentation rules
+* Indentation rules updated (Pull Request #16 / Issue #17)
+
 ## 0.17.0 - Donation button
 * Donation button added
 
