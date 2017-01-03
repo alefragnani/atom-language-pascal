@@ -1,4 +1,7 @@
-## 0.19.0 - New reserved words
+## 0.20.1 - Publishing fixes
+* Fixed images in `README.md` and release number
+
+## 0.20.0 - New reserved words
 * Added some reserved words (PR [#18](https://github.com/alefragnani/atom-language-pascal/pull/18) - kudos to @tsztoyip)
 * Updated `README.md`
 

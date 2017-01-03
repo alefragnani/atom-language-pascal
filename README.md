@@ -12,19 +12,19 @@ This extension adds support to Pascal language in Atom. It works with Delphi and
 
 Full syntax highlight for Pascal
 
-![syntax](images/atom-pascal-syntax.png)
+![syntax](https://raw.githubusercontent.com/alefragnani/atom-language-pascal/master/images/atom-pascal-syntax.png)
 
 ## Snippets
 
 Almost 40 snippets available:
 
-![snippets](images/atom-pascal-snippets.png)
+![snippets](https://raw.githubusercontent.com/alefragnani/atom-language-pascal/master/images/atom-pascal-snippets.png)
 
 ## File Symbols
 
 Navigate to any method inside Pascal files:
 
-![file-symbols](images/atom-pascal-file-symbols.png)
+![file-symbols](https://raw.githubusercontent.com/alefragnani/atom-language-pascal/master/images/atom-pascal-file-symbols.png)
 
 ### Participate
 
