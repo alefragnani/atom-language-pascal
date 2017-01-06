@@ -1,3 +1,6 @@
+## 0.20.2 - Publishing fixes
+* Typo in `README.md`
+
 ## 0.20.1 - Publishing fixes
 * Fixed images in `README.md` and release number
 
