@@ -141,7 +141,7 @@
   'function … end':
     'prefix': 'function'
     'body': """
-      function ${1:MyFunction}(${2:params}:${3:integer};
+      function ${1:MyFunction}(${2:params}): ${3:integer};
       begin
       \t$0
       end;
@@ -203,7 +203,7 @@
   'procedure':
     'prefix': 'procedure'
     'body': """
-      procedure ${1:MyProcedure}(${2:params};
+      procedure ${1:MyProcedure}(${2:params});
       begin
       \t$0
       end;
