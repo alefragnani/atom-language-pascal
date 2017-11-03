@@ -1,3 +1,6 @@
+## 0.20.2 - Snippets fixes
+* Fixed `procedure` and `function` snippets (PR [#21](https://github.com/alefragnani/atom-language-pascal/pull/21) - kudos to @bekicot)
+
 ## 0.20.2 - Publishing fixes
 * Typo in `README.md`
 
