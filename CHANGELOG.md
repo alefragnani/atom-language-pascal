@@ -1,3 +1,6 @@
+## 0.20.5 - Grammar Fix
+* Removed double-dash comment syntax (Issue [#22](https://github.com/alefragnani/atom-language-pascal/issues/22))
+
 ## 0.20.4 - Publishing fixes
 * Typo in `CHANGELOG.md`
 

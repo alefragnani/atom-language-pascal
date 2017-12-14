@@ -39,23 +39,6 @@
     'name': 'constant.numeric.pascal'
   }
   {
-    'begin': '(^[ \\t]+)?(?=--)'
-    'beginCaptures':
-      '1':
-        'name': 'punctuation.whitespace.comment.leading.pascal'
-    'end': '(?!\\G)'
-    'patterns': [
-      {
-        'begin': '--'
-        'beginCaptures':
-          '0':
-            'name': 'punctuation.definition.comment.pascal'
-        'end': '\\n'
-        'name': 'comment.line.double-dash.pascal.one'
-      }
-    ]
-  }
-  {
     'begin': '(^[ \\t]+)?(?=//)'
     'beginCaptures':
       '1':
