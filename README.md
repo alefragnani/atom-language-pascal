@@ -1,16 +1,25 @@
-# Pascal language support in Atom
+<p align="center">
+  <br />
+  <a title="Learn more about Pascal" href="http://github.com/alefragnani/atom-language-pascal"><img src="https://raw.githubusercontent.com/alefragnani/atom-language-pascal/master/images/atom-pascal-logo-readme.png" alt="Pascal Logo" width="70%" /></a>
+</p>
 
-This extension adds support to Pascal language in Atom. It works with Delphi and FreePascal/Lazarus, and supports:
+# Pascal support for Atom
 
-* Syntax Highlighting
-* Snippets
-* File Symbols 
+**Pascal** is an open source package created for **Atom**. While being free and open source, if you find it useful, please consider [supporting it](#support)
+
+It adds support for the **Pascal** language and its dialects like **Delphi** and **FreePascal**. 
+
+Here are some of the features that **Pascal** provides:
+
+* **Syntax highlighting** for files, forms and projects
+* A huge set of **Snippets**
+* **File Symbols** navigation
 
 # Usage
 
 ## Syntax Highlighting
 
-Full syntax highlight for Pascal
+Full syntax highlight for **Pascal**
 
 ![syntax](https://raw.githubusercontent.com/alefragnani/atom-language-pascal/master/images/atom-pascal-syntax.png)
 
@@ -22,7 +31,7 @@ Almost 40 snippets available:
 
 ## File Symbols
 
-Navigate to any method inside Pascal files:
+Navigate to any method inside **Pascal** files:
 
 ![file-symbols](https://raw.githubusercontent.com/alefragnani/atom-language-pascal/master/images/atom-pascal-file-symbols.png)
 
