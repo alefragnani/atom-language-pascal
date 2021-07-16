@@ -3,6 +3,12 @@
   "version": "1.0.0",
   "description": "Pascal language support in Atom",
   "repository": "https://github.com/alefragnani/atom-language-pascal",
+  "keywords": [
+    "pascal",
+    "delphi",
+    "freepascal",
+    "lazarus",
+  ],
   "license": "MIT",
   "engines": {
     "atom": ">0.50.0"
