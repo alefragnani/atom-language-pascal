@@ -7,7 +7,7 @@
     "pascal",
     "delphi",
     "freepascal",
-    "lazarus",
+    "lazarus"
   ],
   "license": "MIT",
   "engines": {
