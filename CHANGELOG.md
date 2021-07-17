@@ -1,3 +1,11 @@
+## [1.1.0] - 2021-07-17
+### Added
+- Syntax Highlight for `strict` keyword (PR [#30](https://github.com/alefragnani/atom-language-pascal/pull/30) - kudos to @viniciusfbb)
+- Support **Firemonkey** (PR [#30](https://github.com/alefragnani/atom-language-pascal/pull/30) - kudos to @viniciusfbb)
+
+### Internal
+- Improved package discovery with proper `keywords` (PR [#30](https://github.com/alefragnani/atom-language-pascal/pull/30) - kudos to @viniciusfbb)
+
 ## [1.0.0] - 2018-09-12
 ### Added
 - New Logo and Readme
