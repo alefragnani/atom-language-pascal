@@ -1,3 +1,10 @@
+## [1.2.0] - 2022-02-14
+### Added
+- Syntax Highlight for `downto`, `out` and `string` keywords (PR [#34](https://github.com/alefragnani/atom-language-pascal/pull/34) - kudos to @viniciusfbb)
+
+### Internal
+- * Add CONTRIBUTING documentation (issue [#95](https://github.com/alefragnani/atom-language-pascal/issues/37))
+
 ## [1.1.0] - 2021-07-17
 ### Added
 - Syntax Highlight for `strict` keyword (PR [#30](https://github.com/alefragnani/atom-language-pascal/pull/30) - kudos to @viniciusfbb)
