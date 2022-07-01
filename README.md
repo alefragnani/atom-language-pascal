@@ -5,6 +5,8 @@
 
 # Pascal support for Atom
 
+> Following Atom archiving in December 15, 2022, this package will be archived as well. Learn more in their [official announcement](https://github.blog/2022-06-08-sunsetting-atom/)
+
 **Pascal** is an open source package created for **Atom**. While being free and open source, if you find it useful, please consider [supporting it](#support)
 
 It adds support for the **Pascal** language and its dialects like **Delphi** and **FreePascal**. 
